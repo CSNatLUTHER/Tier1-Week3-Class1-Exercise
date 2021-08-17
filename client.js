@@ -1,4 +1,5 @@
-//console.log ('js');
+console.log ('js');
+
 function sentenceToSay( sentence ) {
     console.log ('sentence is:', sentence);
     if(sentence[sentence.length -1] === '!'){

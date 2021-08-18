@@ -32,7 +32,7 @@ let newTestSentence = testSentence.replace(' ', '_')
 console.log (newTestSentence)
 
 let spaceReplace = 'This is a test!';
-
+// replace all ' ' with '_' with a for loop and replace method
 for( i=0; i<spaceReplace.length; i++){
     if( spaceReplace[i] === ' '){
         let replacedSpaceRepalce = spaceReplace.replace(spaceReplace[i],'_');

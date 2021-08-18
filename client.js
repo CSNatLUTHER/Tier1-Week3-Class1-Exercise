@@ -19,9 +19,24 @@ let numString = '267'
 let numDigit = Number(numString) // Yes, This Works to convert String to Number
 // let numDigit = numString * 1; // Yes, This works to convert String to Number
 
+let testSentence = 'Trying This Now.';
+console.log('\"',testSentence, '\" has a space at index:', testSentence.indexOf(' ')); // look for index of space ( ' ' )
 
 console.log('numDigit:', numDigit);
 console.log( numDigit * 2 );
 console.log( numString );
 console.log( numString * 2 );
 
+let newTestSentence = testSentence.replace(' ', '_')
+
+console.log (newTestSentence)
+
+let spaceReplace = 'This is a test!';
+
+for( i=0; i<spaceReplace.length; i++){
+    if( spaceReplace[i] === ' '){
+        let replacedSpaceRepalce = spaceReplace.replace(spaceReplace[i],'_');
+        spaceReplace = replacedSpaceRepalce;
+    }  
+} // end for statement
+console.log (spaceReplace);
